@@ -1,32 +1,62 @@
 /* Pet Adoption Website */
 
+
+:root{
+    --yellowbg: url(assets/yellow-bg.png);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
+    /* transition: .5s; */
+}
+html{
+    background: url(assets/blue-bg.png);
 }
 nav{
-    top: 0;
+    margin: 20px;
+    /* top: 10px; */
     left: 0;
     right: 0;
-    padding: 20px 20px 20px 20px;
+    height: 8vh;
+    border-radius: 40px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #918585;
-    
+    background: var(--yellowbg);
+    /* background: url(assets/yellow-bg.png);     */
+    position: fixed;
 }
 nav ul{
-
+    width: 40vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 nav li{
-    margin: 10px;
     list-style-type: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: .5s;
+    font-weight: bolder;
 }
 
+nav li:hover{
+    background-color: #274c9296;
+    /* font-size: 20px; */
+    transform: scale(1.05) ;
+    cursor: pointer;
+}
+section{
+    min-height: 90vh;
+}
+
+#home{
+    /* background: url(assets/blue-bg.png); */
+
+}
 #quote1{
     height: 100vh;
     padding: 10px;
