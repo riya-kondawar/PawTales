@@ -20,8 +20,10 @@
 
     <!-- font: used for main content over the webpage-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
 
     <!-- style sheet -->
@@ -35,31 +37,34 @@
 <body>
     <!-- Nav Bar starts here -->
     <nav>
-        <img id="home-logo" src="assets/pawtales-logo.png" alt="PawTales" >
+        <a href="#home"><img id="home-logo" src="assets/blue-paw-logo.png" alt="PawTales"></a>
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li class="nav-options">Pets
-                <!-- <li class="nav-li-options">Adopt Pet</li> -->
-                <!-- <li class="nav-li-options">Register Pet</li> -->
-            </li>
-            <li>Services</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a> </li>
+            <li class="nav-options"><a href="#">Pets
+                    <!-- <li class="nav-li-options">Adopt Pet</li> -->
+                    <!-- <li class="nav-li-options">Register Pet</li> -->
+                </a></li>
+            <li><a href="#services">Services</a></li>
             <!-- <li>Review from Pet Parents</li> -->
-            <li class="nav-options">Login
-                <ul class="nav-li-options">
-                    <li>User</li>
-                    <li>Admin</li>
-                </ul>
-            </li>
+            <li class="nav-options"><a href="#login">Login
+                    <ul class="nav-li-options">
+                        <li>User</li>
+                        <li>Admin</li>
+                    </ul>
+                </a></li>
         </ul>
     </nav>
 
     <!-- home -->
     <section id="home">
-
-
         <section id="home-quote1">
-            <p>Money can buy u a fine Dog, but only love can make him wag tail wag. </p>
+            <div class="info">
+                <img id="home-logo" src="assets/pawtales-yellow-logo.png" alt="logo">
+                <p>Money can buy u a fine Dog, <br>but only love can make him wag his tail. </p>
+                <a href="#" id="button-home" class="button">Adopt a Pet !</a>
+            </div>
+            <img id="home-img" src="assets/dog-boy1.png" alt="image">
         </section>
     </section>
 
@@ -69,7 +74,7 @@
             <p>Every pet has a story. Give them a happy ending.</p>
         </section>
     </section>
-<!-- Featured pets -->
+    <!-- Featured pets -->
     <section id="featured-pets">
 
     </section>
@@ -102,7 +107,7 @@
 
     </section>
     <!-- footer -->
-    <footer>
+    <footer id="footer">
         <div class="home-footer-container">
             <div class="footer-info" id="footer-info1">
                 <h3>PawTales</h3>

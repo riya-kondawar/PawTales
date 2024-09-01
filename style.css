@@ -1,22 +1,28 @@
 /* Pet Adoption Website */
 
 
-:root{
+:root {
     --yellowbg: url(assets/yellow-bg.png);
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: white;
     list-style-type: none;
+    text-decoration: none;
+    font-family: "Barlow Condensed", sans-serif;
     /* transition: .5s; */
 }
-html{
+
+html {
     background: url(assets/blue-bg.png);
     scroll-behavior: smooth;
 }
-nav{
+
+/* Nav section: Header */
+nav {
     margin: 20px;
     /* top: 10px; */
     left: 0;
@@ -31,59 +37,104 @@ nav{
     /* background: url(assets/yellow-bg.png);     */
     position: fixed;
 }
-nav #home-logo{
+
+nav #home-logo {
     /* height: auto; */
-    width: 12rem;
+    /* width: 12rem; */
     /* margin: -10rem -10rem -10rem 0; */
-    
+    width: 3.4rem;
 }
-nav ul{
+
+nav ul {
     width: 30vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-nav li{
+
+nav li {
     color: #274c92;
     list-style-type: none;
     padding: 8px 15px;
     border-radius: 20px;
     transition: .5s;
     font-weight: bolder;
+    font-size: 18px;
 }
 
-nav li:hover{
-    background-color: #274c9296;
-    color: white;
-    /* font-size: 20px; */
-    transform: scale(1.05) ;
-    cursor: pointer;
+nav li a {
+    color: #274c92;
 }
-.nav-options{
+
+nav li:hover {
+    background-color: #ffffff70;
+    transform: scale(1.05);
+}
+
+.nav-options {
     display: flex;
     flex-direction: column;
 }
-.nav-li-options{
+
+.nav-li-options {
     position: absolute;
     /* display: none; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-section{
+
+section {
     /* min-height: 90vh; */
+    padding: 1rem;
 }
 
-#home{
-    padding-top: 5rem ;
-
+/* home */
+#home {
+    padding-top: 5rem;
 }
-#home-quote1{
-    height: 100vh;
+
+#home-quote1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#home .info {
+    display: flex;
+    flex-direction: column;
+}
+
+#home #home-logo {
+    max-width: 30rem;
+    margin: -12rem -1rem;
+}
+
+#home-quote1 p {
+    font-size: 28px;
+}
+
+#home-quote1 img {
+    width: 40rem;
+    margin: -4rem;
+}
+
+#home #button-home {
+    font-size: 18px;
+    width: fit-content;
     padding: 10px;
-    background: url(assets/images/quote1.jpg) no-repeat;
-    background-position: 20% 40%;
-    background-size: cover;
+    margin: .5rem 0;
+    border-radius: 2rem;
+    font-weight: bolder;
+    color: #274c92;
+    background: url(assets/yellow-bg.png);
+    transition: .5s;
+}
+
+#home #button-home:hover {
+    background-color: #ffffff70;
+    transform: scale(1.05);
 }
 
 
@@ -93,8 +144,8 @@ section{
 
 
 
-
-footer{
+/* footer */
+footer {
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -103,7 +154,7 @@ footer{
 }
 
 
-.home-footer-container{
+.home-footer-container {
     padding: 2rem;
     display: flex;
     flex-direction: row;
@@ -111,22 +162,23 @@ footer{
     justify-content: center;
 }
 
-.home-footer-container .footer-info{
+.home-footer-container .footer-info {
     line-height: 1.2rem;
     padding: 1rem;
     /* width: 200px; */
     /* text-wrap: wrap; */
 }
-.home-footer-container #footer-info1{
+
+.home-footer-container #footer-info1 {
     padding: 1rem;
     width: 400px;
     text-wrap: wrap;
 }
 
-.home-footer-container .social-icons{
+.home-footer-container .social-icons {
     padding: 5px 0;
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    
+
 }
