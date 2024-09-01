@@ -1,50 +1,141 @@
 <!-- Pet Adoption website MiniProject -->
+<!-- Style sheet & script files r already linked
+        font awesome cdn is linked
+ 
+-->
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PawTales</title>
     <link rel="icon" href="assets/images/title-icon.png">
- 
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font: used for main content over the webpage-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
     <!-- style sheet -->
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Js file -->
+    <link rel="script" href="script.js">
+
 </head>
+
 <body>
     <!-- Nav Bar starts here -->
     <nav>
-        <div id="icon">PAWTALES</div>
+        <img id="home-logo" src="assets/pawtales-logo.png" alt="PawTales" >
         <ul>
             <li>Home</li>
             <li>About</li>
-            <li>Pets</li>
+            <li class="nav-options">Pets
+                <!-- <li class="nav-li-options">Adopt Pet</li> -->
+                <!-- <li class="nav-li-options">Register Pet</li> -->
+            </li>
             <li>Services</li>
             <!-- <li>Review from Pet Parents</li> -->
-            <li>Login</li>
+            <li class="nav-options">Login
+                <ul class="nav-li-options">
+                    <li>User</li>
+                    <li>Admin</li>
+                </ul>
+            </li>
         </ul>
     </nav>
 
-    <main>
-        <!-- home -->
-        <section id="home">
+    <!-- home -->
+    <section id="home">
 
-        </section>
 
-        <section id="quote1">
+        <section id="home-quote1">
             <p>Money can buy u a fine Dog, but only love can make him wag tail wag. </p>
         </section>
-    </main>
+    </section>
 
-    
+    <!-- About us -->
+    <section id="about">
+        <section class="about-info">
+            <p>Every pet has a story. Give them a happy ending.</p>
+        </section>
+    </section>
+<!-- Featured pets -->
+    <section id="featured-pets">
 
+    </section>
 
+    <!-- Why choose us? -->
+    <section id="adopt">
+        <h2>Why Adopt with us?</h2>
+        <ul>
+            <li>Save a Life, Create a Bond</li>
+            <li>Be a Hero, Not Just an Owner</li>
+            <li>Tail-Wagging Happiness Awaits</li>
+            <li>Support & Guidance</li>
+        </ul>
+    </section>
+
+    <!-- Shop by Pet -->
+    <div class="pet-container">
+        <div class="home-pets">
+            <h3>Dog</h3>
+            <img src="" alt="">
+        </div>
+        <div class="home-pets">
+            <h3>Cat</h3>
+            <img src="" alt="">
+        </div>
+    </div>
+
+    <section id="contact">
+        <!-- <iframe src="https://www.google.com/maps/search/pet+adoption+center+near+mitwpu/@18.5323809,73.7839827,12z?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D" frameborder="0"></iframe> -->
+
+    </section>
+    <!-- footer -->
     <footer>
+        <div class="home-footer-container">
+            <div class="footer-info" id="footer-info1">
+                <h3>PawTales</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque autem, atque ullam assumenda vero
+                    excepturi.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/pet_adoption_pune/"><i class="fa-brands fa-instagram"></i> </a>
+                    <a href="https://www.facebook.com/Adoptapetcom"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/hashtag/IndianStreetDogs?src=hashtag_click"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
 
-        <h2>PawTales</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque autem, atque ullam assumenda vero excepturi.</p>
-        
+            <div class="footer-info" id="company">
+                <p>Company</p>
+                <ul>
+                    <li>About us</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+
+            <div class="footer-info" id="useful-links">
+                <p>Useful Links</p>
+                <ul>
+                    <li>About us</li>
+                    <li>F.A.Q.</li>
+                </ul>
+            </div>
+        </div>
+
+
         <div class="copyright"> &copy; Copyright PawTales 2004. Designed with love &hearts;</div>
     </footer>
 </body>
+
 </html>

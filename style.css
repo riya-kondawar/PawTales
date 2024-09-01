@@ -9,10 +9,12 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
+    list-style-type: none;
     /* transition: .5s; */
 }
 html{
     background: url(assets/blue-bg.png);
+    scroll-behavior: smooth;
 }
 nav{
     margin: 20px;
@@ -29,13 +31,20 @@ nav{
     /* background: url(assets/yellow-bg.png);     */
     position: fixed;
 }
+nav #home-logo{
+    /* height: auto; */
+    width: 12rem;
+    /* margin: -10rem -10rem -10rem 0; */
+    
+}
 nav ul{
-    width: 40vw;
+    width: 30vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 nav li{
+    color: #274c92;
     list-style-type: none;
     padding: 8px 15px;
     border-radius: 20px;
@@ -45,22 +54,79 @@ nav li{
 
 nav li:hover{
     background-color: #274c9296;
+    color: white;
     /* font-size: 20px; */
     transform: scale(1.05) ;
     cursor: pointer;
 }
+.nav-options{
+    display: flex;
+    flex-direction: column;
+}
+.nav-li-options{
+    position: absolute;
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 section{
-    min-height: 90vh;
+    /* min-height: 90vh; */
 }
 
 #home{
-    /* background: url(assets/blue-bg.png); */
+    padding-top: 5rem ;
 
 }
-#quote1{
+#home-quote1{
     height: 100vh;
     padding: 10px;
     background: url(assets/images/quote1.jpg) no-repeat;
     background-position: 20% 40%;
     background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+footer{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+}
+
+
+.home-footer-container{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-footer-container .footer-info{
+    line-height: 1.2rem;
+    padding: 1rem;
+    /* width: 200px; */
+    /* text-wrap: wrap; */
+}
+.home-footer-container #footer-info1{
+    padding: 1rem;
+    width: 400px;
+    text-wrap: wrap;
+}
+
+.home-footer-container .social-icons{
+    padding: 5px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    
 }
