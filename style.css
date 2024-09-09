@@ -13,6 +13,7 @@
     list-style-type: none;
     text-decoration: none;
     font-family: "Barlow Condensed", sans-serif;
+    user-select: none;
     /* transition: .5s; */
 }
 
