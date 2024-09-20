@@ -1,4 +1,5 @@
-# FSD-miniproject-Pet-Adoption-Website
+# PAWTALES
+## FSD-miniproject-Pet-Adoption-Website 
  
 ### Don't buy, adopt! Pet Adoption is a small application built with React.js
 ### Team Members:- 
