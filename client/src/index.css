@@ -1,0 +1,14 @@
+/*  */
+
+/* Main content font link - (Nunito, Sans-serif) */
+@import url(https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+
+
