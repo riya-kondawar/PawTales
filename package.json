@@ -1,12 +1,14 @@
 {
-  "name": "fsd-miniproject-pet-adoption-website",
+  "name": "PawTales-Pet-Aadoption-Website",
   "version": "1.0.0",
   "description": "Pet Adoption rest api  1. Manasi Mali - 1032222217 - PD37\r 2. Riya Kondawar - 1032222227 - PD43\r 3. Suhani Choudhary - 1032222231 - PD45",
   "main": "server.js",
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ./client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "Riya, Manasi, Suhani",
@@ -14,11 +16,14 @@
   "dependencies": {
     "bcrypt": "^5.1.1",
     "colors": "^1.4.0",
+    "concurrently": "^9.0.1",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.7.0",
     "morgan": "^1.10.0",
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "react-icons": "^5.3.0"
   }
 }
