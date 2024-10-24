@@ -2,40 +2,40 @@ import mongoose from "mongoose";
 
 const productSchema = new mongoose.Schema(
   {
+    animalID: {
+      type: String,
+      required: true,
+      unique: true,
+    },
     name: {
       type: String,
-      required: true,
-    },
-    slug: {
-      type: String,
-      required: true,
-    },
-    description: {
-      type: String,
-      required: true,
-    },
-    price: {
-      type: Number,
-      required: true,
+      required: true, // Updated from animalName to name
     },
     category: {
-      type: mongoose.ObjectId,
-      ref: "Category",
-      required: true,
-    },
-    quantity: {
-      type: Number,
-      required: true,
+      type: String,
+      required: true, // Updated from animalType to category
     },
     photo: {
       data: Buffer,
       contentType: String,
     },
-    shipping: {
-      type: Boolean,
+    sex: {
+      type: String,
+      enum: ['Male', 'Female', 'Unknown'], // Optional: Limit to specific values
+    },
+    dob: {
+      type: Date,
+    },
+    intakeDate: {
+      type: Date,
+      required: true,
+    },
+    location: {
+      type: String, // New field for location
     },
   },
   { timestamps: true }
 );
 
 export default mongoose.model("Products", productSchema);
+

@@ -4,8 +4,10 @@ import dotenv from "dotenv";
 import morgan from "morgan";
 import connectDB from "./config/db.js";
 import authRoutes from "./routes/authRoute.js";
+import productRoutes from "./routes/productRoutes.js";
 import cors from "cors";
 import helmet from 'helmet';
+
 
 
 // To convert back to 'js' format from 'jsx', just uncomment below 2 lines and remove 'type' attribute from 'package.json'
@@ -29,6 +31,7 @@ app.use(morgan("dev"));
 
 // routes
 app.use("/api/v1/auth", authRoutes);
+app.use('/api/v1/product', productRoutes);
 
 // rest api
 app.get("/", (req, res) => {
