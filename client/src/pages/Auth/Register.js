@@ -106,8 +106,8 @@ const Register = () => {
                 value={answer}
                 onChange={(e) => setAnswer(e.target.value)}
                 className="form-control"
-                id="exampleInputAddr1"
-                placeholder="Who is your favourite Singer?"
+                id="exampleInputAns1"
+                placeholder="Enter your favourite Singer"
                 required
               />
             </div>

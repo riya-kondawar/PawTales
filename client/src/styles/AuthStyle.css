@@ -1,8 +1,7 @@
-
-
-/* ==================== REGISTER PAGE ======================= */
+/* ==================== REGISTER & LOGIN PAGE ======================= */
 .form-page{
     min-height: 100vh;
+    padding-top: 60px;
     display: flex;
     flex-direction: row;
     align-items: center;
