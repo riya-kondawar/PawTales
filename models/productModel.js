@@ -9,11 +9,28 @@ const productSchema = new mongoose.Schema(
     },
     name: {
       type: String,
-      required: true, // Updated from animalName to name
+      required: true,
+    },
+    slug: {
+      type: String,
+      required: true,
+    },
+    description: {
+      type: String,
+      required: true,
+    },
+    gender: {
+      type: String,
+      required: true,
     },
     category: {
+      type: mongoose.ObjectId,
+      ref: "Category", // Assuming you have a Category model
+      required: true,
+    },
+    location: {
       type: String,
-      required: true, // Updated from animalType to category
+      required: true,
     },
     photo: {
       data: Buffer,
@@ -21,7 +38,7 @@ const productSchema = new mongoose.Schema(
     },
     sex: {
       type: String,
-      enum: ['Male', 'Female', 'Unknown'], // Optional: Limit to specific values
+      enum: ['Male', 'Female', 'Unknown'], // Limiting to specific values
     },
     dob: {
       type: Date,
@@ -30,12 +47,8 @@ const productSchema = new mongoose.Schema(
       type: Date,
       required: true,
     },
-    location: {
-      type: String, // New field for location
-    },
   },
   { timestamps: true }
 );
 
 export default mongoose.model("Products", productSchema);
-

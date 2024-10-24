@@ -6,20 +6,11 @@ import slugify from "slugify";
 // Create product
 export const createProductController = async (req, res) => {
   try {
-    const {
-      animalID,
-      name,
-      category,
-      sex,
-      dob,
-      intakeDate,
-      location,
-    } = req.fields;
-
+    const { animalID, name, description, gender, category, location } = req.fields;
     const { photo } = req.files;
 
     // Validation
-    if (!animalID || !name || !category || !intakeDate) {
+    if (!animalID || !name || !description || !gender || !category || !location) {
       return res.status(400).send({ error: "All fields are required" });
     }
 
@@ -30,10 +21,9 @@ export const createProductController = async (req, res) => {
     const product = new productModel({
       animalID,
       name,
+      description,
+      gender,
       category,
-      sex,
-      dob,
-      intakeDate,
       location,
       slug: slugify(name),
     });
@@ -59,23 +49,55 @@ export const createProductController = async (req, res) => {
   }
 };
 
+// Get all products
+export const getProductController = async (req, res) => {
+  try {
+    const products = await productModel.find().populate("category").select("-photo");
+    res.status(200).send({
+      success: true,
+      countTotal: products.length,
+      message: "All Products",
+      products,
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).send({
+      success: false,
+      message: "Error in getting products",
+      error: error.message,
+    });
+  }
+};
+
+// Get single product
+export const getSingleProductController = async (req, res) => {
+  try {
+    const product = await productModel.findById(req.params.pid);
+    if (!product) {
+      return res.status(404).send({ success: false, message: "Product not found" });
+    }
+    res.status(200).send({
+      success: true,
+      product,
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).send({
+      success: false,
+      message: "Error fetching product",
+      error: error.message,
+    });
+  }
+};
+
 // Update product
 export const updateProductController = async (req, res) => {
   try {
-    const {
-      animalID,
-      name,
-      category,
-      sex,
-      dob,
-      intakeDate,
-      location,
-    } = req.fields;
-
+    const { animalID, name, description, gender, category, location } = req.fields;
     const { photo } = req.files;
 
     // Validation
-    if (!animalID || !name || !category || !intakeDate) {
+    if (!animalID || !name || !description || !gender || !category || !location) {
       return res.status(400).send({ error: "All fields are required" });
     }
 
@@ -88,10 +110,9 @@ export const updateProductController = async (req, res) => {
       {
         animalID,
         name,
+        description,
+        gender,
         category,
-        sex,
-        dob,
-        intakeDate,
         location,
         slug: slugify(name),
       },
@@ -114,45 +135,6 @@ export const updateProductController = async (req, res) => {
     res.status(500).send({
       success: false,
       message: "Error in updating product",
-      error: error.message,
-    });
-  }
-};
-
-// Get all products
-export const getProductController = async (req, res) => {
-  try {
-    const products = await productModel.find();
-    res.status(200).send({
-      success: true,
-      products,
-    });
-  } catch (error) {
-    console.error(error);
-    res.status(500).send({
-      success: false,
-      message: "Error fetching products",
-      error: error.message,
-    });
-  }
-};
-
-// Get single product
-export const getSingleProductController = async (req, res) => {
-  try {
-    const product = await productModel.findById(req.params.slug);
-    if (!product) {
-      return res.status(404).send({ success: false, message: "Product not found" });
-    }
-    res.status(200).send({
-      success: true,
-      product,
-    });
-  } catch (error) {
-    console.error(error);
-    res.status(500).send({
-      success: false,
-      message: "Error fetching product",
       error: error.message,
     });
   }

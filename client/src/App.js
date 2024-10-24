@@ -12,8 +12,8 @@ import AdminRoute from "./components/Routes/AdminRoutes.js";
 import AdminDashboard from "./pages/Admin/AdminDashboard.js";
 import ForgotPassword from "./pages/Auth/ForgotPassword.js";
 import PrivateRoute from "./components/Routes/Private.js";
-import CreatePet from "./pages/Admin/CreatePet.js";
-import CreatePetCard from "./pages/Admin/CreatePetCard.js";
+import CreateCategory from "./pages/Admin/CreateCategory.js";
+import CreateProduct from "./pages/Admin/CreateProduct.js";
 import Users from "./pages/Admin/Users.js";
 import Adoption from "./pages/user/Adoption.js";
 import Profile from "./pages/user/Profile.js";
@@ -34,8 +34,8 @@ function App() {
         </Route>
         <Route path="/dashboard" element={<AdminRoute />}>
           <Route path="admin" element={<AdminDashboard />} />
-          <Route path="admin/create-pet" element={<CreatePet />} />
-          <Route path="admin/create-pet-card" element={<CreatePetCard />} />
+          <Route path="admin/create-category" element={<CreateCategory />} />
+          <Route path="admin/create-product" element={<CreateProduct />} />
           <Route path="admin/users" element={<Users />} />
         </Route>
         <Route path="/register" element={<Register />} />

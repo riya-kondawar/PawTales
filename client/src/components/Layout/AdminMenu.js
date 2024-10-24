@@ -11,18 +11,18 @@ const AdminMenu = () => {
         >
           <h4>Admin Panel</h4>
           <NavLink
-            to="/dashboard/admin/create-pet"
+            to="/dashboard/admin/create-category"
             className="list-group-item list-group-item-action"
             style={{ color: "#274c92", backgroundColor: "#274c92" }}
           >
-            Add New Pet Profile
+            Create Pet Category
           </NavLink>
           <NavLink
-            to="/dashboard/admin/create-pet-card"
+            to="/dashboard/admin/create-product"
             className="list-group-item list-group-item-action"
             style={{ color: "#274c92", backgroundColor: "#274c92" }}
           >
-            Create Product
+            Create Pet
           </NavLink>
           <NavLink
             to="/dashboard/admin/users"
