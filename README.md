@@ -13,7 +13,7 @@
 #################
 
 admin login pass => password@123
-dotenv => 
+dotenv =>
 
 Helmet (used in Layout.js) =>
 
@@ -23,10 +23,6 @@ toast => display message like 'alert' func
 
 concurrently => can run 2 applications simultaneously at once
 
-context api (redux) => 
+context api (redux) =>
 
 Outlet (used in private.js for dashboard) => used for nested routing, routing fnc will be enabled
-
-
-
-

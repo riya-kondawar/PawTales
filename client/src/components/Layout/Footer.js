@@ -56,6 +56,9 @@ const Footer = () => {
                 <Link to="/contact">Contact Us</Link>
               </li>
               <li>
+                <Link to="/policy">Privacy Policy</Link>
+              </li>
+              <li>
                 <a href="/faq">F.A.Q.</a>
               </li>
             </ul>

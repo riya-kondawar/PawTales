@@ -8,7 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito",'Roboto', 'Gowun Batang', sans-serif;
 }
 
 .home,
@@ -16,8 +16,10 @@
 .login,
 .about,
 .pets,
-.favPets {
-  /* margin-top: 55px; */
+.policy,
+.favPets,
+.dashboard {
+  margin-top: 55px;
   min-height: 90vh;
   /* Do not change the above value */
 }
@@ -64,6 +66,9 @@
 
 .back-home-link:hover {
   background-color: #1f3a6b;
+  background-color: #f0f4f8;
+  color: #274c92;
+  border-color: #274c92;
 }
 
 
