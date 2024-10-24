@@ -21,13 +21,6 @@
 
 // export default CreateCategory
 
-
-
-
-
-
-
-
 import React, { useEffect, useState } from "react";
 import Layout from "./../../components/Layout/Layout";
 import AdminMenu from "./../../components/Layout/AdminMenu";
@@ -100,7 +93,7 @@ const CreateCategory = () => {
       toast.error("Somtihing went wrong");
     }
   };
-  
+
   //delete category
   const handleDelete = async (pId) => {
     try {
@@ -120,8 +113,8 @@ const CreateCategory = () => {
   };
   return (
     <Layout title={"Dashboard - Create Category"}>
-      <div className="container-fluid m-3 p-3">
-        <div className="row">
+      <div className="dashboard">
+        <div className="row p-5 m-auto d-flex align-items-start justify-content-start">
           <div className="col-md-3">
             <AdminMenu />
           </div>

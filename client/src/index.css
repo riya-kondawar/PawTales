@@ -21,6 +21,7 @@
 .dashboard {
   margin-top: 55px;
   min-height: 90vh;
+  width: 100vw;
   /* Do not change the above value */
 }
 

@@ -7,7 +7,7 @@ import authRoutes from "./routes/authRoute.js";
 import categoryRoutes from "./routes/categoryRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
 import cors from "cors";
-import helmet from 'helmet';
+import helmet from "helmet";
 
 // Configure environment variables
 dotenv.config();
@@ -39,7 +39,5 @@ const PORT = process.env.PORT || 8080;
 
 // Start the server
 app.listen(PORT, () => {
-  console.log(
-    `Server Running on ${process.env.DEV_MODE} mode on port ${PORT}`
-  );
+  console.log(`Server Running on ${process.env.DEV_MODE} mode on port ${PORT}`);
 });
