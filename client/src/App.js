@@ -19,7 +19,7 @@ import Adoption from "./pages/user/Adoption.js";
 import Profile from "./pages/user/Profile.js";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Pets from "./pages/user/Pets.js";
+// import Pets from "./pages/user/Pets.js";
 
 function App() {
   return (
