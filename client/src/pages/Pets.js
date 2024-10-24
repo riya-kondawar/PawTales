@@ -91,6 +91,305 @@ const Pets = () => {
               <p><strong>DOB:</strong> 06/15/2021</p>
             </div>
           </div>
+
+          <div className="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
+            <div className="card-details">
+              <p><strong>Animal ID:</strong> 002</p>
+              <p><strong>Animal Name:</strong> Pinky</p>
+              <p><strong>Animal Type:</strong> Cat</p>
+              <p><strong>Primary Color:</strong> White</p>
+              <p><strong>Secondary Color:</strong> Black</p>
+              <p><strong>Sex:</strong> Female</p>
+              <p><strong>DOB:</strong> 06/15/2021</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
+            <div className="card-details">
+              <p><strong>Animal ID:</strong> 002</p>
+              <p><strong>Animal Name:</strong> Pinky</p>
+              <p><strong>Animal Type:</strong> Cat</p>
+              <p><strong>Primary Color:</strong> White</p>
+              <p><strong>Secondary Color:</strong> Black</p>
+              <p><strong>Sex:</strong> Female</p>
+              <p><strong>DOB:</strong> 06/15/2021</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
+            <div className="card-details">
+              <p><strong>Animal ID:</strong> 002</p>
+              <p><strong>Animal Name:</strong> Pinky</p>
+              <p><strong>Animal Type:</strong> Cat</p>
+              <p><strong>Primary Color:</strong> White</p>
+              <p><strong>Secondary Color:</strong> Black</p>
+              <p><strong>Sex:</strong> Female</p>
+              <p><strong>DOB:</strong> 06/15/2021</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
+            <div className="card-details">
+              <p><strong>Animal ID:</strong> 002</p>
+              <p><strong>Animal Name:</strong> Pinky</p>
+              <p><strong>Animal Type:</strong> Cat</p>
+              <p><strong>Primary Color:</strong> White</p>
+              <p><strong>Secondary Color:</strong> Black</p>
+              <p><strong>Sex:</strong> Female</p>
+              <p><strong>DOB:</strong> 06/15/2021</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
+            <div className="card-details">
+              <p><strong>Animal ID:</strong> 002</p>
+              <p><strong>Animal Name:</strong> Pinky</p>
+              <p><strong>Animal Type:</strong> Cat</p>
+              <p><strong>Primary Color:</strong> White</p>
+              <p><strong>Secondary Color:</strong> Black</p>
+              <p><strong>Sex:</strong> Female</p>
+              <p><strong>DOB:</strong> 06/15/2021</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
+            <div className="card-details">
+              <p><strong>Animal ID:</strong> 002</p>
+              <p><strong>Animal Name:</strong> Pinky</p>
+              <p><strong>Animal Type:</strong> Cat</p>
+              <p><strong>Primary Color:</strong> White</p>
+              <p><strong>Secondary Color:</strong> Black</p>
+              <p><strong>Sex:</strong> Female</p>
+              <p><strong>DOB:</strong> 06/15/2021</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
+            <div className="card-details">
+              <p><strong>Animal ID:</strong> 002</p>
+              <p><strong>Animal Name:</strong> Pinky</p>
+              <p><strong>Animal Type:</strong> Cat</p>
+              <p><strong>Primary Color:</strong> White</p>
+              <p><strong>Secondary Color:</strong> Black</p>
+              <p><strong>Sex:</strong> Female</p>
+              <p><strong>DOB:</strong> 06/15/2021</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
+            <div className="card-details">
+              <p><strong>Animal ID:</strong> 002</p>
+              <p><strong>Animal Name:</strong> Pinky</p>
+              <p><strong>Animal Type:</strong> Cat</p>
+              <p><strong>Primary Color:</strong> White</p>
+              <p><strong>Secondary Color:</strong> Black</p>
+              <p><strong>Sex:</strong> Female</p>
+              <p><strong>DOB:</strong> 06/15/2021</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
+            <div className="card-details">
+              <p><strong>Animal ID:</strong> 002</p>
+              <p><strong>Animal Name:</strong> Pinky</p>
+              <p><strong>Animal Type:</strong> Cat</p>
+              <p><strong>Primary Color:</strong> White</p>
+              <p><strong>Secondary Color:</strong> Black</p>
+              <p><strong>Sex:</strong> Female</p>
+              <p><strong>DOB:</strong> 06/15/2021</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
+            <div className="card-details">
+              <p><strong>Animal ID:</strong> 002</p>
+              <p><strong>Animal Name:</strong> Pinky</p>
+              <p><strong>Animal Type:</strong> Cat</p>
+              <p><strong>Primary Color:</strong> White</p>
+              <p><strong>Secondary Color:</strong> Black</p>
+              <p><strong>Sex:</strong> Female</p>
+              <p><strong>DOB:</strong> 06/15/2021</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
+            <div className="card-details">
+              <p><strong>Animal ID:</strong> 002</p>
+              <p><strong>Animal Name:</strong> Pinky</p>
+              <p><strong>Animal Type:</strong> Cat</p>
+              <p><strong>Primary Color:</strong> White</p>
+              <p><strong>Secondary Color:</strong> Black</p>
+              <p><strong>Sex:</strong> Female</p>
+              <p><strong>DOB:</strong> 06/15/2021</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
+            <div className="card-details">
+              <p><strong>Animal ID:</strong> 002</p>
+              <p><strong>Animal Name:</strong> Pinky</p>
+              <p><strong>Animal Type:</strong> Cat</p>
+              <p><strong>Primary Color:</strong> White</p>
+              <p><strong>Secondary Color:</strong> Black</p>
+              <p><strong>Sex:</strong> Female</p>
+              <p><strong>DOB:</strong> 06/15/2021</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
+            <div className="card-details">
+              <p><strong>Animal ID:</strong> 002</p>
+              <p><strong>Animal Name:</strong> Pinky</p>
+              <p><strong>Animal Type:</strong> Cat</p>
+              <p><strong>Primary Color:</strong> White</p>
+              <p><strong>Secondary Color:</strong> Black</p>
+              <p><strong>Sex:</strong> Female</p>
+              <p><strong>DOB:</strong> 06/15/2021</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
+            <div className="card-details">
+              <p><strong>Animal ID:</strong> 002</p>
+              <p><strong>Animal Name:</strong> Pinky</p>
+              <p><strong>Animal Type:</strong> Cat</p>
+              <p><strong>Primary Color:</strong> White</p>
+              <p><strong>Secondary Color:</strong> Black</p>
+              <p><strong>Sex:</strong> Female</p>
+              <p><strong>DOB:</strong> 06/15/2021</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
+            <div className="card-details">
+              <p><strong>Animal ID:</strong> 002</p>
+              <p><strong>Animal Name:</strong> Pinky</p>
+              <p><strong>Animal Type:</strong> Cat</p>
+              <p><strong>Primary Color:</strong> White</p>
+              <p><strong>Secondary Color:</strong> Black</p>
+              <p><strong>Sex:</strong> Female</p>
+              <p><strong>DOB:</strong> 06/15/2021</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
+            <div className="card-details">
+              <p><strong>Animal ID:</strong> 002</p>
+              <p><strong>Animal Name:</strong> Pinky</p>
+              <p><strong>Animal Type:</strong> Cat</p>
+              <p><strong>Primary Color:</strong> White</p>
+              <p><strong>Secondary Color:</strong> Black</p>
+              <p><strong>Sex:</strong> Female</p>
+              <p><strong>DOB:</strong> 06/15/2021</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
+            <div className="card-details">
+              <p><strong>Animal ID:</strong> 002</p>
+              <p><strong>Animal Name:</strong> Pinky</p>
+              <p><strong>Animal Type:</strong> Cat</p>
+              <p><strong>Primary Color:</strong> White</p>
+              <p><strong>Secondary Color:</strong> Black</p>
+              <p><strong>Sex:</strong> Female</p>
+              <p><strong>DOB:</strong> 06/15/2021</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
+            <div className="card-details">
+              <p><strong>Animal ID:</strong> 002</p>
+              <p><strong>Animal Name:</strong> Pinky</p>
+              <p><strong>Animal Type:</strong> Cat</p>
+              <p><strong>Primary Color:</strong> White</p>
+              <p><strong>Secondary Color:</strong> Black</p>
+              <p><strong>Sex:</strong> Female</p>
+              <p><strong>DOB:</strong> 06/15/2021</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
+            <div className="card-details">
+              <p><strong>Animal ID:</strong> 002</p>
+              <p><strong>Animal Name:</strong> Pinky</p>
+              <p><strong>Animal Type:</strong> Cat</p>
+              <p><strong>Primary Color:</strong> White</p>
+              <p><strong>Secondary Color:</strong> Black</p>
+              <p><strong>Sex:</strong> Female</p>
+              <p><strong>DOB:</strong> 06/15/2021</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
+            <div className="card-details">
+              <p><strong>Animal ID:</strong> 002</p>
+              <p><strong>Animal Name:</strong> Pinky</p>
+              <p><strong>Animal Type:</strong> Cat</p>
+              <p><strong>Primary Color:</strong> White</p>
+              <p><strong>Secondary Color:</strong> Black</p>
+              <p><strong>Sex:</strong> Female</p>
+              <p><strong>DOB:</strong> 06/15/2021</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
+            <div className="card-details">
+              <p><strong>Animal ID:</strong> 002</p>
+              <p><strong>Animal Name:</strong> Pinky</p>
+              <p><strong>Animal Type:</strong> Cat</p>
+              <p><strong>Primary Color:</strong> White</p>
+              <p><strong>Secondary Color:</strong> Black</p>
+              <p><strong>Sex:</strong> Female</p>
+              <p><strong>DOB:</strong> 06/15/2021</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
+            <div className="card-details">
+              <p><strong>Animal ID:</strong> 002</p>
+              <p><strong>Animal Name:</strong> Pinky</p>
+              <p><strong>Animal Type:</strong> Cat</p>
+              <p><strong>Primary Color:</strong> White</p>
+              <p><strong>Secondary Color:</strong> Black</p>
+              <p><strong>Sex:</strong> Female</p>
+              <p><strong>DOB:</strong> 06/15/2021</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
+            <div className="card-details">
+              <p><strong>Animal ID:</strong> 002</p>
+              <p><strong>Animal Name:</strong> Pinky</p>
+              <p><strong>Animal Type:</strong> Cat</p>
+              <p><strong>Primary Color:</strong> White</p>
+              <p><strong>Secondary Color:</strong> Black</p>
+              <p><strong>Sex:</strong> Female</p>
+              <p><strong>DOB:</strong> 06/15/2021</p>
+            </div>
+          </div>
         </section>
 
         <button id="meet-all-btn" onClick={fetchAllPets}>Meet All Pets</button>
