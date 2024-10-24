@@ -36,12 +36,20 @@ const Products = () => {
             {products.map((product) => (
               <Link
                 key={product._id}
+<<<<<<< HEAD
                 to={/dashboard/admin/product/${product.slug}}
+=======
+                to={`/dashboard/admin/product/${product.slug}`}
+>>>>>>> 00e6f71db12bdd0afcb127a12b7bed642a27f791
                 className="product-link"
               >
                 <div className="card m-2" style={{ width: "18rem" }}>
                   <img
+<<<<<<< HEAD
                     src={/api/v1/product/product-photo/${product._id}}
+=======
+                    src={`/api/v1/product/product-photo/${product._id}`}
+>>>>>>> 00e6f71db12bdd0afcb127a12b7bed642a27f791
                     className="card-img-top"
                     alt={product.name}
                   />
