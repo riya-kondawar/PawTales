@@ -19,6 +19,8 @@ import Adoption from "./pages/user/Adoption.js";
 import Profile from "./pages/user/Profile.js";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
+
 // import Pets from "./pages/user/Pets.js";
 
 function App() {
@@ -36,6 +38,7 @@ function App() {
           <Route path="admin" element={<AdminDashboard />} />
           <Route path="admin/create-category" element={<CreateCategory />} />
           <Route path="admin/create-product" element={<CreateProduct />} />
+          <Route path="admin/products" element={<Product />} />
           <Route path="admin/users" element={<Users />} />
         </Route>
         <Route path="/register" element={<Register />} />

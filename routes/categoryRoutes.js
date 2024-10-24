@@ -10,8 +10,7 @@ import {
 
 const router = express.Router();
 
-// Routes
-// Create category
+// Create Category
 router.post(
   "/create-category",
   requireSignIn,
@@ -19,7 +18,7 @@ router.post(
   createCategoryController
 );
 
-// Update category
+// Update Category
 router.put(
   "/update-category/:id",
   requireSignIn,
@@ -27,13 +26,13 @@ router.put(
   updateCategoryController
 );
 
-// Get all categories
+// Get All Categories
 router.get("/get-category", categoryController);
 
-// Single category
+// Get Single Category
 router.get("/single-category/:slug", singleCategoryController);
 
-// Delete category
+// Delete Category
 router.delete(
   "/delete-category/:id",
   requireSignIn,
