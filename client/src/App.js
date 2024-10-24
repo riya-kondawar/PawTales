@@ -5,20 +5,18 @@ import Contact from "./pages/Contact.js";
 import PageNotFound from "./pages/PageNotFound.js";
 import Register from "./pages/Auth/Register.js";
 import Login from "./pages/Auth/Login.js";
-<<<<<<< Updated upstream
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import Pets from "./pages/Auth/Pets.js";
-=======
 import Dashboard from "./pages/user/Dashboard.js";
 import PrivateRoute from "./components/Layout/Routes/Private";
 import AdminRoute from "./components/Layout/Routes/AdminRoutes.js";
 import AdminDashboard from "./pages/Admin/AdminDashboard.js";
->>>>>>> Stashed changes
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Pets from "./pages/user/Pets.js";
 
 function App() {
   return (
     <>
+      <ToastContainer />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/dashboard" element={<PrivateRoute />}>

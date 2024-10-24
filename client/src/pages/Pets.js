@@ -73,33 +73,37 @@ const Pets = () => {
     <input type="text" placeholder="Search by breed" id="breedSearch" />
     <button onclick="searchPets()">Search</button>
   </section>
+
   <section id="pet-cards" className="pet-cards">
-    {/* Cards for dogs and cats */}
-    <div className="card">
-      <img src="https://goofytails.com/cdn/shop/files/labrador-retriever_1000x.jpg?v=1701077639" alt="Dog 1" />
-      <h3>John</h3>
-      <span className="heart" onclick="addToFavorites('John')">♥</span>
-      <button className="meet-btn">Meet John</button>
+  {/* Cards for dogs and cats with detailed information */}
+  <div className="card">
+    <img src="https://goofytails.com/cdn/shop/files/labrador-retriever_1000x.jpg?v=1701077639" alt="Dog 1" />
+    <div className="card-details">
+      <p><strong>Animal ID:</strong> 001</p>
+      <p><strong>Animal Name:</strong> John</p>
+      <p><strong>Animal Type:</strong> Dog</p>
+      <p><strong>Primary Color:</strong> Yellow</p>
+      <p><strong>Secondary Color:</strong> None</p>
+      <p><strong>Sex:</strong> Male</p>
+      <p><strong>DOB:</strong> 01/01/2022</p>
     </div>
-    <div className="card">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
-      <h3>Pinky</h3>
-      <span className="heart" onclick="addToFavorites('Pinky')">♥</span>
-      <button className="meet-btn">Meet Pinky</button>
+  </div>
+  
+  <div className="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
+    <div className="card-details">
+      <p><strong>Animal ID:</strong> 002</p>
+      <p><strong>Animal Name:</strong> Pinky</p>
+      <p><strong>Animal Type:</strong> Cat</p>
+      <p><strong>Primary Color:</strong> White</p>
+      <p><strong>Secondary Color:</strong> Black</p>
+      <p><strong>Sex:</strong> Female</p>
+      <p><strong>DOB:</strong> 06/15/2021</p>
     </div>
-    <div className="card">
-      <img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" alt="Dog 2" />
-      <h3>Buddy</h3>
-      <span className="heart" onclick="addToFavorites('Buddy')">♥</span>
-      <button className="meet-btn">Meet Buddy</button>
-    </div>
-    {/* More pet cards */}
-    {/* The last card with 'Meet them all' */}
-    <div className="card">
-      <h4>20 more pets available on Pawtales</h4>
-      <button className="meet-btn">Meet them all</button>
-    </div>
-  </section>
+  </div>
+</section>
+
+  
   <section id="articles-section" className="articles-section">
     {/* Pet Health & Wellness Section */}
     <div className="section-header">
