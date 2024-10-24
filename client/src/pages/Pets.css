@@ -86,6 +86,7 @@ h1 {
 
 .intro {
     max-width: 800px;
+    height: 90%;
     margin: 0 auto 40px auto;
     text-align: center;
     line-height: 1.6;
@@ -124,127 +125,105 @@ h1 {
 }
 
 #pet-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
-  }
-  
-  .card {
-    display: flex;
-    width: 48%; /* Two cards per row */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    gap: 20px; /* Space between the cards */
+    justify-items: center; /* Center the cards */
+}
+
+.card {
+    width: 100%; /* Full width of the grid column */
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    align-items: center; /* Aligns the image and details vertically */
-  }
-  
-  .card img {
-    width: 40%; /* Set image width */
-    height: 100%;
-    object-fit: cover; /* Ensures the image maintains aspect ratio */
-  }
-  
-  .card-details {
+    display: flex;
+    flex-direction: column; /* Vertical layout */
+}
+
+.card img {
+    width: 100%;
+    height: 250px; /* Fixed height for images */
+    object-fit: cover; /* Ensure image fits in the card */
+}
+
+.card-details {
     padding: 15px;
-    width: 60%; /* Set details width */
-  }
-  
-  .card-details p {
+    text-align: center; /* Center-align text */
+}
+
+.card-details p {
     margin: 8px 0;
     font-size: 16px;
-  }
-  
-
-.articles-section {
-    margin-top: 40px;
 }
 
-.section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px; /* Space between header and article cards */
+.card-details p:last-of-type {
+    font-weight: bold;
+    color: #007bff; /* Highlight the city */
 }
 
-.section-header h2 {
-    font-size: 24px;
-    margin: 0; /* Remove any additional margin to keep it aligned */
-}
 
-.view-all-btn {
-    
-    color: black;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s, transform 0.3s;
-    margin-left: 20px; /* Ensure it has space next to the header */
-}
-
-.view-all-btn:hover {
-    background-color: #45a049;
-    transform: scale(1.05);
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .article-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px; /* Space between article cards */
-    margin-top: 40px; /* Add space between section header and first article */
+    display: flex;                 /* Enables flexbox layout */
+    flex-wrap: wrap;              /* Allows items to wrap onto the next line */
+    justify-content: space-between; /* Distributes space between cards */
+    margin-top: 20px;             /* Adds space above the article section */
 }
+
 
 .article-card {
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    background-color: #fff;
-    max-width: 300px;
-    margin: 0 auto 20px auto; /* Center the card in the container */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.3s, box-shadow 0.3s; /* Add hover effect */
-}
-
-.article-card:hover {
-    transform: scale(1.05); /* Slightly grow on hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Add stronger shadow on hover */
-}
-
-.article-card h3 {
-    font-size: 18px;
-    text-align: center; /* Center the article title */
-    margin-bottom: 15px;
-}
-
-.article-card p {
-    font-size: 14px;
-    margin-bottom: 15px;
-    text-align: center; /* Center the description */
-}
-
-.read-more-btn {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
+    display: flex;                       /* Use flexbox for horizontal alignment */
+    border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 10px 15px;
-    cursor: pointer;
+    margin: 10px;                       /* Space around each card */
+    padding: 10px;
+    width: calc(50% - 20px);            /* Sets width to half of the container, minus margin */
+    box-sizing: border-box;              /* Ensures padding and border are included in width */
+}
+
+.article-card img {
+    width: 150px;                       /* Set a fixed width for the image */
+    height: auto;                      /* Maintain aspect ratio */
+    margin-right: 20px;                /* Space between image and text */
+}
+
+.card-description {
+    display: flex;
+    flex-direction: column;             /* Arrange text in a column */
+    justify-content: center;             /* Center the text vertically */
+}
+
+
+.card-description h3 {
+    font-size: 18px;
+    margin: 0 0 10px; /* Margin between title and other details */
+}
+
+.card-description p {
+    margin: 0 0 10px; /* Margin below the paragraph */
+}
+
+.video-link {
+    color: #007bff;
+    text-decoration: none;
     font-size: 14px;
-    transition: background-color 0.3s, transform 0.3s;
-    align-self: center; /* Align button to the center */
+    font-weight: bold;
 }
 
-.read-more-btn:hover {
-    background-color: #45a049;
-    transform: scale(1.05);
+.video-link:hover {
+    text-decoration: underline;
 }
 
-
-  
+/* Additional styles to ensure responsiveness */
+@media (max-width: 768px) {
+    .article-card {
+        width: 100%; /* Stack cards on smaller screens */
+    }
+}

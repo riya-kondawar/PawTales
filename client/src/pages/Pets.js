@@ -94,73 +94,40 @@ const Pets = () => {
         </section>
 
         <section id="pet-cards" className="pet-cards">
-          {/* Static Cards for demonstration */}
-          <div className="card">
-            <img src="https://goofytails.com/cdn/shop/files/labrador-retriever_1000x.jpg?v=1701077639" alt="Dog 1" />
-            <div className="card-details">
-              <p><strong>Animal ID:</strong> 001</p>
-              <p><strong>Animal Name:</strong> John</p>
-              <p><strong>Animal Type:</strong> Dog</p>
-              <p><strong>Primary Color:</strong> Yellow</p>
-              <p><strong>Secondary Color:</strong> None</p>
-              <p><strong>Sex:</strong> Male</p>
-              <p><strong>DOB:</strong> 01/01/2022</p>
-              <button onClick={() => addToFavorites("John")}>Add to Favorites</button>
+          {additionalPets.map(pet => (
+            <div className="card" key={pet.id}>
+              <img src={pet.imageUrl} alt={pet.name} />
+              <div className="card-details">
+                <p><strong>ID:</strong> {pet.id}</p>
+                <p><strong>Name:</strong> {pet.name}</p>
+                <p><strong>Breed:</strong> {pet.breed}</p>
+                <p><strong>City:</strong> {pet.city}</p>
+                <button onClick={() => addToFavorites(pet.name)}>Add to Favorites</button>
+              </div>
             </div>
-          </div>
-          
-          <div className="card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimtZyskdR3y0AtCiHyEebU1o7mZQFOA6F0Q&s" alt="Cat 1" />
-            <div className="card-details">
-              <p><strong>Animal ID:</strong> 002</p>
-              <p><strong>Animal Name:</strong> Pinky</p>
-              <p><strong>Animal Type:</strong> Cat</p>
-              <p><strong>Primary Color:</strong> White</p>
-              <p><strong>Secondary Color:</strong> Black</p>
-              <p><strong>Sex:</strong> Female</p>
-              <p><strong>DOB:</strong> 06/15/2021</p>
-              <button onClick={() => addToFavorites("Pinky")}>Add to Favorites</button>
+          ))}
+        </section>
+
+        <section className="article-container">
+          {/* Example Article Card 1 */}
+          <div className="article-card">
+            <img src="https://i.pinimg.com/enabled/564x/07/b3/62/07b3621e6dfccfe11ff667f5b695f2d4.jpg" alt="Article 1" />
+            <div className="card-description">
+              <h3>Article Title 1</h3>
+              <p><strong>Breed:</strong> Labrador<br /><strong>City:</strong> New York</p>
+              <a href="https://www.youtube.com/watch?v=example1" className="video-link">Watch Video</a>
             </div>
           </div>
 
-          {/* Dynamically loaded pets */}
-          <section id="additional-pets" className="additional-pets">
-            {additionalPets.map((pet, index) => (
-              <div className="card" key={index}>
-                <img src={pet.image} alt={pet.name} />
-                <div className="card-details">
-                  <p><strong>Animal ID:</strong> {pet.id}</p>
-                  <p><strong>Animal Name:</strong> {pet.name}</p>
-                  <p><strong>Animal Type:</strong> {pet.type}</p>
-                  <p><strong>Primary Color:</strong> {pet.primaryColor}</p>
-                  <p><strong>Secondary Color:</strong> {pet.secondaryColor}</p>
-                  <p><strong>Sex:</strong> {pet.sex}</p>
-                  <p><strong>DOB:</strong> {pet.dob}</p>
-                  <button onClick={() => addToFavorites(pet.name)}>Add to Favorites</button>
-                </div>
-              </div>
-            ))}
-          </section>
-
-          {/* Health & Wellness Articles Section */}
-          <section id="articles-section" className="articles-section">
-            <div className="section-header">
-              <h2>Pet Health &amp; Wellness</h2>
-              <button className="view-all-btn" onClick={handleViewAll}>View All Health Articles</button>
+          {/* Example Article Card 2 */}
+          <div className="article-card">
+            <img src="https://example.com/image2.jpg" alt="Article 2" />
+            <div className="card-description">
+              <h3>Article Title 2</h3>
+              <p><strong>Breed:</strong> Bulldog<br /><strong>City:</strong> Los Angeles</p>
+              <a href="https://www.youtube.com/watch?v=example2" className="video-link">Watch Video</a>
             </div>
-            <div className="article-container">
-              <div className="article-card">
-                <h3>Top 5 Tips for Keeping Your Dog Healthy</h3>
-                <p>Learn essential tips to ensure your dog stays healthy and happy.</p>
-                <button className="read-more-btn">Read More</button>
-              </div>
-              <div className="article-card">
-                <h3>Essential Vaccinations for Your Pet</h3>
-                <p>Discover the must-have vaccinations for your furry friend.</p>
-                <button className="read-more-btn">Read More</button>
-              </div>
-            </div>
-          </section>
+          </div>
         </section>
       </div>
     </Layout>
