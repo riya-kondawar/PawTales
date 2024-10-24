@@ -6,7 +6,7 @@ import Policy from "./pages/Policy.js";
 import PageNotFound from "./pages/PageNotFound.js";
 import Register from "./pages/Auth/Register.js";
 import Login from "./pages/Auth/Login.js";
-// import Pets from "./pages/Pets.js";
+import Pets from "./pages/Pets.js";
 import Dashboard from "./pages/user/Dashboard.js";
 import AdminRoute from "./components/Routes/AdminRoutes.js";
 import AdminDashboard from "./pages/Admin/AdminDashboard.js";
@@ -17,10 +17,14 @@ import CreatePetCard from "./pages/Admin/CreatePetCard.js";
 import Users from "./pages/Admin/Users.js";
 import Adoption from "./pages/user/Adoption.js";
 import Profile from "./pages/user/Profile.js";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Pets from "./pages/user/Pets.js";
 
 function App() {
   return (
     <>
+      <ToastContainer />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/dashboard" element={<PrivateRoute />}>
@@ -41,7 +45,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/policy" element={<Policy />} />
         <Route path="*" element={<PageNotFound />} />
-        {/* <Route path="/pets" element={<Pets />} /> */}
+        <Route path="/pets" element={<Pets />} />
       </Routes>
     </>
   );
