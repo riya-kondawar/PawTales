@@ -33,6 +33,13 @@ const AdminMenu = () => {
            Products
           </NavLink>
           <NavLink
+            to="/dashboard/admin/products"
+            className="list-group-item list-group-item-action"
+            style={{ color: "#274c92", backgroundColor: "#274c92" }}
+          >
+            All Pets
+          </NavLink>
+          <NavLink
             to="/dashboard/admin/users"
             className="list-group-item list-group-item-action"
             style={{ color: "#274c92", backgroundColor: "#274c92" }}

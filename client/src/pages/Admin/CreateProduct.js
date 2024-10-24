@@ -52,7 +52,10 @@ const CreateProduct = () => {
       productData.append("photo", photo);
       productData.append("category", category);
 
-      const { data } = await axios.post("/api/v1/product/create-product", productData);
+      const { data } = await axios.post(
+        "/api/v1/product/create-product",
+        productData
+      );
       if (data?.success) {
         toast.success(data?.message);
         navigate("/dashboard/admin/products");
@@ -67,8 +70,8 @@ const CreateProduct = () => {
 
   return (
     <Layout title={"Dashboard - Create Pet Product"}>
-      <div className="container-fluid m-3 p-3">
-        <div className="row">
+      <div className="dashboard">
+        <div className="row p-5 m-auto d-flex align-items-start justify-content-start">
           <div className="col-md-3">
             <AdminMenu />
           </div>

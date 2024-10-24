@@ -366,7 +366,7 @@ const Header = () => {
             )}
             <li className="nav-item">
               <NavLink
-                to="/favPets"
+                to="/cart"
                 className="nav-link"
                 style={{ margin: "auto 10px", fontWeight: 400 }}
               >
