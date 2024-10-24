@@ -1,5 +1,6 @@
-import CategoryModel from "../models/CategoryModel";
+import CategoryModel from "../models/CategoryModel.js";
 import slugify from "slugify";
+
 export const createCategoryController = async (req, res) => {
   try {
     const { name } = req.body;
@@ -19,15 +20,15 @@ export const createCategoryController = async (req, res) => {
     }).save();
     res.status(201).send({
       success: true,
-      message: "new category created",
+      message: "New category created",
       category,
     });
   } catch (error) {
     console.log(error);
     res.status(500).send({
       success: false,
-      errro,
-      message: "Errro in Category",
+      error,
+      message: "Error in Category",
     });
   }
 };
@@ -57,8 +58,8 @@ export const updateCategoryController = async (req, res) => {
   }
 };
 
-// get all cat
-export const categoryControlller = async (req, res) => {
+// get all catategory
+export const categoryController = async (req, res) => {
   try {
     const category = await CategoryModel.find({});
     res.status(200).send({
@@ -82,7 +83,7 @@ export const singleCategoryController = async (req, res) => {
     const category = await CategoryModel.findOne({ slug: req.params.slug });
     res.status(200).send({
       success: true,
-      message: "Get SIngle Category SUccessfully",
+      message: "Get Single Category SUccessfully",
       category,
     });
   } catch (error) {
