@@ -4,7 +4,7 @@ import slugify from "slugify";
 
 export const createProductController = async (req, res) => {
   try {
-    const { name, description, price, category, quantity, shipping } =
+    const { name, description, gender, category, location, shipping } =
       req.fields;
     const { photo } = req.files;
     // Validation
@@ -13,12 +13,12 @@ export const createProductController = async (req, res) => {
         return res.status(500).send({ error: "Name is Required" });
       case !description:
         return res.status(500).send({ error: "Description is Required" });
-      case !price:
-        return res.status(500).send({ error: "Price is Required" });
+      case !gender:
+        return res.status(500).send({ error: "Gender is Required" });
       case !category:
         return res.status(500).send({ error: "Category is Required" });
-      case !quantity:
-        return res.status(500).send({ error: "Quantity is Required" });
+      case !location:
+        return res.status(500).send({ error: "Location is Required" });
       case photo && photo.size > 1000000:
         return res
           .status(500)
@@ -41,7 +41,7 @@ export const createProductController = async (req, res) => {
     res.status(500).send({
       success: false,
       error,
-      message: "Error in crearing product",
+      message: "Error in creating product",
     });
   }
 };
@@ -86,7 +86,7 @@ export const getSingleProductController = async (req, res) => {
     console.log(error);
     res.status(500).send({
       success: false,
-      message: "Eror while getitng single product",
+      message: "Error while getitng single product",
       error,
     });
   }
@@ -131,21 +131,21 @@ export const deleteProductController = async (req, res) => {
 //upate products
 export const updateProductController = async (req, res) => {
   try {
-    const { name, description, price, category, quantity, shipping } =
+    const { name, description, gender, category, location, shipping } =
       req.fields;
     const { photo } = req.files;
-    //alidation
+    // Validation
     switch (true) {
       case !name:
         return res.status(500).send({ error: "Name is Required" });
       case !description:
         return res.status(500).send({ error: "Description is Required" });
-      case !price:
-        return res.status(500).send({ error: "Price is Required" });
+      case !gender:
+        return res.status(500).send({ error: "Gender is Required" });
       case !category:
         return res.status(500).send({ error: "Category is Required" });
-      case !quantity:
-        return res.status(500).send({ error: "Quantity is Required" });
+      case !location:
+        return res.status(500).send({ error: "Location is Required" });
       case photo && photo.size > 1000000:
         return res
           .status(500)

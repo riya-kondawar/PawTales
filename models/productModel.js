@@ -14,8 +14,8 @@ const productSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    price: {
-      type: Number,
+    gender: {
+      type: String,
       required: true,
     },
     category: {
@@ -23,8 +23,8 @@ const productSchema = new mongoose.Schema(
       ref: "Category",
       required: true,
     },
-    quantity: {
-      type: Number,
+    location: {
+      type: String,
       required: true,
     },
     photo: {
