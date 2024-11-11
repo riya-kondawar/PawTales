@@ -1,76 +1,115 @@
-import { Routes, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import About from "./pages/About.js";
-import Contact from "./pages/Contact.js";
-import Policy from "./pages/Policy.js";
-import PageNotFound from "./pages/PageNotFound.js";
-import Register from "./pages/Auth/Register.js";
-import Login from "./pages/Auth/Login.js";
-import Dashboard from "./pages/user/Dashboard.js";
-import PrivateRoute from "./components/Routes/Private.js";
-import ForgotPassword from "./pages/Auth/ForgotPassword.js";
-import AdminRoute from "./components/Routes/AdminRoutes.js";
-import AdminDashboard from "./pages/Admin/AdminDashboard.js";
-import CreateCategory from "./pages/Admin/CreateCategory.js";
-import CreateProduct from "./pages/Admin/CreateProduct.js";
-import Users from "./pages/Admin/Users.js";
-import Adoption from "./pages/user/Adoption.js"; // Orders
-import Profile from "./pages/user/Profile.js";
-// Import Products from the correct folder
-import Products from "./pages/Admin/Products.js";
-// update product
-import Search from "antd/es/transfer/search.js";
-// product details
-// Categories
-// Categ Product
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import Navbar from "./Components/NavBar/Navbar";
+import Home from "./Components/Home/Home";
+import Footer from "./Components/Footer/Footer";
+import Services from "./Components/Services/Services";
+import Contact from "./Components/Contact/Contact";
+import Pets from "./Components/Pets/Pets";
+import AdoptForm from "./Components/AdoptForm/AdoptForm";
+import AdminLogin from "./Components/AdminPanel/AdminLogin";
+import Profile from "./Components/Profile/Profile";
+import Auth from "./Components/Auth/Auth";
+import { useAuthContext } from './hooks/UseAuthContext';
+import "./App.css";
+import FourOhFourPage from "./Components/404/FourOhFourPage";
 
-import CartPage from "./pages/CartPage";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+const Layout = ({ children }) => (
+  <>
+    <Navbar title="PawFinds" />
+    {children}
+    <Footer title="PawFinds" />
+  </>
+);
 
-function App() {
+const ProtectedRoute = ({ user, children }) => {
+  return user ? children : <Navigate to="/auth" />;
+};
+
+const App = () => {
+  const { user } = useAuthContext();
+
   return (
-    <>
-      <ToastContainer />
+    <Router>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        {/* <Route path="/product/:slug" element={<ProductDetails />} /> */}
-        {/* <Route path="/categories" element={<Categories />} /> */}
-        <Route path="/cart" element={<CartPage />} />
-        {/* <Route path="/category/:slug" element={<CategoryProduct />} /> */}
-        <Route path="/search" element={<Search />} />
-        
-        {/* User Dashboard and Related Routes */}
-        <Route path="/dashboard" element={<PrivateRoute />}>
-          <Route path="user" element={<Dashboard />} />
-          <Route path="user/adoption" element={<Adoption />} />
-          <Route path="user/profile" element={<Profile />} />
-        </Route>
-
-        {/* Admin Dashboard and Related Routes */}
-        <Route path="/dashboard" element={<AdminRoute />}>
-          <Route path="admin" element={<AdminDashboard />} />
-          <Route path="admin/create-category" element={<CreateCategory />} />
-          <Route path="admin/create-product" element={<CreateProduct />} />
-          <Route path="admin/products" element={<Products />} />
-          <Route path="admin/users" element={<Users />} />
-        </Route>
-
-        {/* Authentication Routes */}
-        <Route path="/register" element={<Register />} />
-        <Route path="/forgot-password" element={<ForgotPassword />} />
-        <Route path="/login" element={<Login />} />
-
-        {/* Informational Pages */}
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/policy" element={<Policy />} />
-
-        {/* Page Not Found */}
-        <Route path="*" element={<PageNotFound />} />
+        <Route 
+          path="/" 
+          element={
+            <ProtectedRoute user={user}>
+              <Layout>
+                <Home description="Ensure you are fully prepared to provide proper care and attention to your pet before welcoming them into your home." />
+              </Layout>
+            </ProtectedRoute>
+          } 
+        />
+        <Route 
+          path="/services" 
+          element={
+            <ProtectedRoute user={user}>
+              <Layout>
+                <Services />
+              </Layout>
+            </ProtectedRoute>
+          } 
+        />
+        <Route 
+          path="/contact" 
+          element={
+            <ProtectedRoute user={user}>
+              <Layout>
+                <Contact />
+              </Layout>
+            </ProtectedRoute>
+          } 
+        />
+        <Route 
+          path="/pets" 
+          element={
+            <ProtectedRoute user={user}>
+              <Layout>
+                <Pets />
+              </Layout>
+            </ProtectedRoute>
+          } 
+        />
+         <Route 
+          path="/profile" 
+          element={
+            <ProtectedRoute user={user}>
+              <Layout>
+                <Profile />
+              </Layout>
+            </ProtectedRoute>
+          } 
+        />
+        <Route 
+          path="/adopt-form" 
+          element={
+            <ProtectedRoute user={user}>
+              <Layout>
+                <AdoptForm />
+              </Layout>
+            </ProtectedRoute>
+          } 
+        />
+        <Route 
+          path="/admin" 
+          element={
+              <AdminLogin />
+          } 
+        />
+       
+        <Route 
+          path="/auth" 
+          element={!user ? <Auth /> : <Navigate to="/" />} 
+        />
+         <Route 
+          path="/*" 
+          element={<FourOhFourPage/>} 
+        />
       </Routes>
-    </>
+    </Router>
   );
-}
+};
 
 export default App;
